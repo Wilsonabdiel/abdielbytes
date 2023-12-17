@@ -73,3 +73,6 @@ class App extends React.Component {constructor(...args) {super(...args);_defineP
 
 
 ReactDOM.render( React.createElement(App, null), document.getElementById('app'));
+
+
+export default App;
