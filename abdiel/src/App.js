@@ -1,9 +1,16 @@
 import './App.css';
 import './home.css';
+import './Nav.css'
 import Home from './home';
+import Nav from './Nav';
 function App() {
   return (
-    <Home />
+    <div>
+
+        <Nav />
+        <Home />
+    </div>
+
   );
 }
 
