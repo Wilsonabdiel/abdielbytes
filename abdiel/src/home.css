@@ -9,3 +9,6 @@ body{
 li{
     list-style: none;
 }
+.main{
+    display: column;
+}

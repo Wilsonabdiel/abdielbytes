@@ -7,7 +7,7 @@ const Home = () => {
                 </h5>
                 <ul>
                     {/* To be made responsive. */}
-                    <li >I worked at SoftSuite</li>
+                    <li >I work at SoftSuite</li>
                     <li>Creator of  BCH eResources </li>
                     <li>Team member at Uniuyo Backend</li>
                 </ul>
