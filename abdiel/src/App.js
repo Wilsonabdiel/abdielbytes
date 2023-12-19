@@ -3,14 +3,18 @@ import './home.css';
 import './Nav.css'
 import Home from './home';
 import Nav from './Nav';
+import Footer from './Footer';
 function App() {
   return (
-    <div>
+    
+      <div>
 
-        <Nav />
-        <Home />
-    </div>
-
+          <Nav />
+          <Home />
+          <Footer />
+          // <canvas id="waves"> </canvas>
+      </div>
+    
   );
 }
 

@@ -17,6 +17,7 @@ const Home = () => {
                         I enjoy problem-solving and creating visually appealing and user-friendly interfaces, and well perfroming, scallable and secure backends. My passion for learning is insatiable—I thrive on acquiring new knowledge and skills. Writing has always held a special place in my heart; it's a hobby I've cherished since high school. I'm not just a coder; I'm also a poet, expressing my thoughts through words. Additionally, I have a deep passion for food, savoring both the culinary art and its cultural significance!
                 </p>
                 <div>
+                    
                     <h6>What I DO...</h6>
              
                     <p>

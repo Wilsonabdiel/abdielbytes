@@ -3,11 +3,15 @@ const Nav = () => {
         <section className="">
             
             <ul className="nav">
-                <li>Blog</li>
-                <li>Projects</li>
-                <li>Talks & Spaces</li>
-                <li>Podcasts</li>
-                <li>Demos</li>
+            <li>Demos</li>
+            <li>Podcasts</li>
+            <li>Talks & Spaces</li>
+            <li>Projects</li>
+            <li>Blog</li>
+                
+                
+                
+               
                 
             </ul>
         </section>
