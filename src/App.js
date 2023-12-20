@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './header';
 import SocialLinks from './SocialLinks';
+import About from './About';
+import Projects from './Projects';
+import Contact from './contact';
+import Footer from './Footer';
+
 
 class App extends Component {
     state = { loading: false };

@@ -1,6 +1,7 @@
 import React from 'react';
+import SocialLinks from './SocialLinks';
 
-const Contact = ({ contactData }) => (
+const Contact = () => (
     <section id="contact">
         <div className="container">
             <div className="heading-wrapper">
@@ -21,11 +22,11 @@ const Contact = ({ contactData }) => (
                     <SocialLinks />
                 </div>
             </div>
-            <form id="contact-form" onSubmit={handleSubmit}> {/* Add onSubmit handler */}
+            <form id="contact-form" > {/* Add onSubmit handler */}
                 {/* ... form fields */}
             </form>
         </div>
     </section>
 );
- 
+
 export default Contact;

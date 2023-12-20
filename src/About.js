@@ -1,8 +1,7 @@
 import React from 'react';
 
-const About = () => {
-    return ( 
-        <section id="about">
+const About = () => (
+    <section id="about">
         <div className="wrapper">
             <article>
                 <header>
@@ -10,7 +9,7 @@ const About = () => {
                 </header>
 
                 <section>
-                    <h3>Who's this guy?</h3>
+                    <h3>Who is this guy?</h3>
                     <p>...</p>
                 </section>
 
@@ -27,6 +26,5 @@ const About = () => {
         </div>
     </section>
      );
-}
- 
+
 export default About;

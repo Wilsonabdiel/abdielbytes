@@ -1,8 +1,7 @@
 import React from 'react';
 
-const Project = ({ title, img, tech, link, repo, children }) => {
-    return ( 
-        <div className="project">
+const Project = ({ title, img, tech, link, repo, children }) => (
+    <div className="project">
         <a className="project-link" href={link} target="_blank" rel="noopener noreferrer">
             <figure>
                 <img className="project-image" src={img} alt={`Screenshot of ${title}`} />
@@ -13,7 +12,7 @@ const Project = ({ title, img, tech, link, repo, children }) => {
             <div className="project-tile">
                 <p className="icons">
                     {tech.split(' ').map(t => (
-                        <i key={t} className={getIconClass(t)} />
+                        <i key={t} />
           ))}
                 </p>
             </div>
@@ -29,7 +28,6 @@ const Project = ({ title, img, tech, link, repo, children }) => {
         </div>
     </div>
      );
-}
 
 const Projects = ({ projects }) => (
     <section id="projects">
@@ -37,9 +35,7 @@ const Projects = ({ projects }) => (
             <div className="heading">
                 <h2 className="title">My Work So Far</h2>
                 <p className="separator" aria-hidden="true" /> {/* Add aria-hidden for non-visual separator */}
-                <p className="subtitle">
-                    Here's a list of <u>most</u> of the projects I've been working on lately. All of these were built during my coding camp adventure on {/* ... */}
-                </p>
+                <p className="subtitle"> Here is a list of most of the projects I have been working on lately. All of these were built during my coding camp adventure on </p>
             </div>
             {projects.map(project => (
                 <Project key={project.id} {...project} />
@@ -48,5 +44,5 @@ const Projects = ({ projects }) => (
     </section>
 );
 
- 
+
 export default Projects;
