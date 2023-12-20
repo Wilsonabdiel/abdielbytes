@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Main from './main';
+import Header from './header';
+import SocialLinks from './SocialLinks';
 
 class App extends Component {
     state = { loading: false };
@@ -14,9 +15,14 @@ class App extends Component {
 
     render() {
         return (
-
-            <Main />
-
+            <div>
+                <Header />
+                <About />
+                <Projects />
+                <Contact />
+                <Footer />
+                <SocialLinks />
+            </div>
         );
     }
 }

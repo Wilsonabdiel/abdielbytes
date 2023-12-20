@@ -36,176 +36,176 @@ const Main = () => {
 };
 
 
-const Header = () => (
-    <header id="welcome-section">
-        <div className="forest" />
-        <div className="silhouette" />
-        <div className="moon" />
-        <div className="container">
-            <h1>
-                <span className="line">I do</span>
-                <span className="line">backend dev.</span>
-                <span className="line">
-                    <span className="color">&</span> I write.
-                </span>
-            </h1>
-            <div className="buttons">
-                <a href="#projects">my portfolio</a>
-                <a href="#contact" className="cta">get in touch</a>
-            </div>
-        </div>
-    </header>
-);
+// const Header = () => (
+//     <header id="welcome-section">
+//         <div className="forest" />
+//         <div className="silhouette" />
+//         <div className="moon" />
+//         <div className="container">
+//             <h1>
+//                 <span className="line">I do</span>
+//                 <span className="line">backend dev.</span>
+//                 <span className="line">
+//                     <span className="color">&</span> I write.
+//                 </span>
+//             </h1>
+//             <div className="buttons">
+//                 <a href="#projects">my portfolio</a>
+//                 <a href="#contact" className="cta">get in touch</a>
+//             </div>
+//         </div>
+//     </header>
+// );
 
-const About = () => (
-    <section id="about">
-        <div className="wrapper">
-            <article>
-                <header>
-                    <h2>About Me</h2>
-                </header>
+// const About = () => (
+//     <section id="about">
+//         <div className="wrapper">
+//             <article>
+//                 <header>
+//                     <h2>About Me</h2>
+//                 </header>
 
-                <section>
-                    <h3>Who's this guy?</h3>
-                    <p>...</p>
-                </section>
+//                 <section>
+//                     <h3>Who's this guy?</h3>
+//                     <p>...</p>
+//                 </section>
 
-                <section>
-                    <h3>What does he do?</h3>
-                    <p>...</p>
-                </section>
+//                 <section>
+//                     <h3>What does he do?</h3>
+//                     <p>...</p>
+//                 </section>
 
-                <section>
-                    <h3>Also a writer.</h3>
-                    <p>...</p>
-                </section>
-            </article>
-        </div>
-    </section>
-);
+//                 <section>
+//                     <h3>Also a writer.</h3>
+//                     <p>...</p>
+//                 </section>
+//             </article>
+//         </div>
+//     </section>
+// );
 
-const Project = ({ title, img, tech, link, repo, children }) => (
-    <div className="project">
-        <a className="project-link" href={link} target="_blank" rel="noopener noreferrer">
-            <figure>
-                <img className="project-image" src={img} alt={`Screenshot of ${title}`} />
-                <figcaption>{title}</figcaption>
-            </figure>
-        </a>
-        <div className="project-details">
-            <div className="project-tile">
-                <p className="icons">
-                    {tech.split(' ').map(t => (
-                        <i key={t} className={getIconClass(t)} />
-          ))}
-                </p>
-            </div>
-            {children}
-            <div className="buttons">
-                <a href={repo} target="_blank" rel="noopener noreferrer">
-                    View source <i className="fas fa-external-link-alt" />
-                </a>
-                <a href={link} target="_blank" rel="noopener noreferrer">
-                    Try it Live <i className="fas fa-external-link-alt" />
-                </a>
-            </div>
-        </div>
-    </div>
-);
+// const Project = ({ title, img, tech, link, repo, children }) => (
+//     <div className="project">
+//         <a className="project-link" href={link} target="_blank" rel="noopener noreferrer">
+//             <figure>
+//                 <img className="project-image" src={img} alt={`Screenshot of ${title}`} />
+//                 <figcaption>{title}</figcaption>
+//             </figure>
+//         </a>
+//         <div className="project-details">
+//             <div className="project-tile">
+//                 <p className="icons">
+//                     {tech.split(' ').map(t => (
+//                         <i key={t} className={getIconClass(t)} />
+//           ))}
+//                 </p>
+//             </div>
+//             {children}
+//             <div className="buttons">
+//                 <a href={repo} target="_blank" rel="noopener noreferrer">
+//                     View source <i className="fas fa-external-link-alt" />
+//                 </a>
+//                 <a href={link} target="_blank" rel="noopener noreferrer">
+//                     Try it Live <i className="fas fa-external-link-alt" />
+//                 </a>
+//             </div>
+//         </div>
+//     </div>
+// );
 
-function getIconClass(tech) {
-  // Map technologies to icon classes here
-}
+// function getIconClass(tech) {
+//   // Map technologies to icon classes here
+// }
 
-const Projects = ({ projects }) => (
-    <section id="projects">
-        <div className="projects-container">
-            <div className="heading">
-                <h2 className="title">My Work So Far</h2>
-                <p className="separator" aria-hidden="true" /> {/* Add aria-hidden for non-visual separator */}
-                <p className="subtitle">
-                    Here's a list of <u>most</u> of the projects I've been working on lately. All of these were built during my coding camp adventure on {/* ... */}
-                </p>
-            </div>
-            {projects.map(project => (
-                <Project key={project.id} {...project} />
-      ))}
-        </div>
-    </section>
-);
-
-
-const Contact = ({ contactData }) => (
-    <section id="contact">
-        <div className="container">
-            <div className="heading-wrapper">
-                <div className="heading">
-                    <h2 className="title">Want to contact me?</h2>
-                    <p className="separator" aria-hidden="true" /> {/* Add aria-hidden for non-visual separator */}
-                    <p className="subtitle">
-                        Please use the form below or send an email to
-                        <a href="mailto:wilsonabdiel86@gmail.com" className="mail">
-                            wilsonabdiel86{' '}
-                            <i className="fas fa-at at" aria-hidden="true" />{' '}
-                            gmail{' '}
-                            <i className="fas fa-circle dot" aria-hidden="true" />{' '}
-                            com
-                        </a>
-                        .
-                    </p>
-                    <SocialLinks />
-                </div>
-            </div>
-            <form id="contact-form" onSubmit={handleSubmit}> {/* Add onSubmit handler */}
-                {/* ... form fields */}
-            </form>
-        </div>
-    </section>
-);
+// const Projects = ({ projects }) => (
+//     <section id="projects">
+//         <div className="projects-container">
+//             <div className="heading">
+//                 <h2 className="title">My Work So Far</h2>
+//                 <p className="separator" aria-hidden="true" /> {/* Add aria-hidden for non-visual separator */}
+//                 <p className="subtitle">
+//                     Here's a list of <u>most</u> of the projects I've been working on lately. All of these were built during my coding camp adventure on {/* ... */}
+//                 </p>
+//             </div>
+//             {projects.map(project => (
+//                 <Project key={project.id} {...project} />
+//       ))}
+//         </div>
+//     </section>
+// );
 
 
-const Footer = ({ footerData }) => (
-    <footer>
-        <div className="wrapper">
-            <h2 className="title">THANKS FOR VISITING</h2>
-            <p className="copyright">Copyright &copy; {new Date().getFullYear()} JaWiL.</p>
-            <SocialLinks />
-        </div>
-    </footer>
-);
+// const Contact = ({ contactData }) => (
+//     <section id="contact">
+//         <div className="container">
+//             <div className="heading-wrapper">
+//                 <div className="heading">
+//                     <h2 className="title">Want to contact me?</h2>
+//                     <p className="separator" aria-hidden="true" /> {/* Add aria-hidden for non-visual separator */}
+//                     <p className="subtitle">
+//                         Please use the form below or send an email to
+//                         <a href="mailto:wilsonabdiel86@gmail.com" className="mail">
+//                             wilsonabdiel86{' '}
+//                             <i className="fas fa-at at" aria-hidden="true" />{' '}
+//                             gmail{' '}
+//                             <i className="fas fa-circle dot" aria-hidden="true" />{' '}
+//                             com
+//                         </a>
+//                         .
+//                     </p>
+//                     <SocialLinks />
+//                 </div>
+//             </div>
+//             <form id="contact-form" onSubmit={handleSubmit}> {/* Add onSubmit handler */}
+//                 {/* ... form fields */}
+//             </form>
+//         </div>
+//     </section>
+// );
 
 
-const SocialLinks = ({ socialLinks }) => (
-    <div className="social">
-        {socialLinks.map(link => (
-            <a
-                key={link.href}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                title={link.title}>
-                <i className={`fab fa-${link.icon}`} aria-hidden="true" />
-                {link.title}
-                const SocialLinks = ({ socialLinks }) = (
-                <div className="social">
-                    {socialLinks.map(link => (
-                        <a
-                            key={link.href}
-                            href={link.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            title={link.title}>
-                            <i className={`fab fa-${link.icon}`} aria-hidden="true" />
-                            {link.title}
-                        </a>
-    ))}
-                </div>
-                );
+// const Footer = ({ footerData }) => (
+//     <footer>
+//         <div className="wrapper">
+//             <h2 className="title">THANKS FOR VISITING</h2>
+//             <p className="copyright">Copyright &copy; {new Date().getFullYear()} JaWiL.</p>
+//             <SocialLinks />
+//         </div>
+//     </footer>
+// );
 
-            </a>
-    ))}
-    </div>
-);
+
+// const SocialLinks = ({ socialLinks }) => (
+//     <div className="social">
+//         {socialLinks.map(link => (
+//             <a
+//                 key={link.href}
+//                 href={link.href}
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 title={link.title}>
+//                 <i className={`fab fa-${link.icon}`} aria-hidden="true" />
+//                 {link.title}
+//                 const SocialLinks = ({ socialLinks }) = (
+//                 <div className="social">
+//                     {socialLinks.map(link => (
+//                         <a
+//                             key={link.href}
+//                             href={link.href}
+//                             target="_blank"
+//                             rel="noopener noreferrer"
+//                             title={link.title}>
+//                             <i className={`fab fa-${link.icon}`} aria-hidden="true" />
+//                             {link.title}
+//                         </a>
+//     ))}
+//                 </div>
+//                 );
+
+//             </a>
+//     ))}
+//     </div>
+// );
 
 
     /** *********************
