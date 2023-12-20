@@ -1,8 +1,8 @@
 import React from 'react';
 
-const SocialLinks = ({ socialLinks }) => (
+const SocialLinks = () => (
     <div className="social">
-        {socialLinks.map(link => (
+        {/* {socialLinks.map(link => (
             <a
                 key={link.href}
                 href={link.href}
@@ -14,7 +14,7 @@ const SocialLinks = ({ socialLinks }) => (
 
 
             </a>
-    ))}
+    ))} */}
     </div>
 );
 export default SocialLinks;
