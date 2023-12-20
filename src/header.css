@@ -39,7 +39,7 @@
     .outline {
         color: transparent;
         -webkit-text-stroke: 2px white;
-		text-stroke: 2px white;
+		    text-stroke: 2px white;
         text-shadow: none;
     }
 }
