@@ -1,5 +1,6 @@
 import React from 'react';
 import SocialLinks from './SocialLinks';
+import './contact.css';
 
 const Contact = () => (
     <section id="contact">
@@ -22,8 +23,13 @@ const Contact = () => (
                     <SocialLinks />
                 </div>
             </div>
-            <form id="contact-form" > {/* Add onSubmit handler */}
-                {/* ... form fields */}
+            <form id="contact-form" action="https://formsubmit.co/493fc4bf038a46bcf37e4b1ef70a8377" method="POST" >
+
+
+                <input placeholder="Name" name="name" type="text" required />
+                <input placeholder="Email" name="email" type="email" required />
+                <textarea placeholder="Message" type="text" name="message" />
+                <input className="button" id="submit" value="Submit" type="submit" />
             </form>
         </div>
     </section>

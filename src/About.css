@@ -14,11 +14,13 @@
     background-position: top;
   }
   
+
   #about .wrapper {
     padding: 15rem 10rem 12rem;
     height: 100%;
     min-height: 100vh;
     max-width: 1400px;
+    /* display: flex; */
     margin: 0 auto;
   }
   

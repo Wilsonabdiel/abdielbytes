@@ -6,7 +6,8 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './contact';
 import Footer from './Footer';
-
+import Menu from './Menu';
+import Nav from './Nav';
 
 class App extends Component {
     state = { loading: false };
@@ -20,8 +21,12 @@ class App extends Component {
 
     render() {
         return (
-            <div>
+            <div className="body">
+                <Menu />
+                <Nav />
                 <Header />
+
+
                 <About />
                 <Projects />
                 <Contact />

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './projects.css';
 // const Project = ({ title, img, tech, link, repo, children }) => (
 //     <div className="project">
 //         <a className="project-link" href={link} target="_blank" rel="noopener noreferrer">
