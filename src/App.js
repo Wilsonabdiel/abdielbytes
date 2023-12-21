@@ -25,8 +25,6 @@ class App extends Component {
                 <Menu />
                 <Nav />
                 <Header />
-
-
                 <About />
                 <Projects />
                 <Contact />

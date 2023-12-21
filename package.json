@@ -1,7 +1,7 @@
 {
     "name": "abb",
     "dependencies": {
-        "react": "^15.5.4",
+        "react": "^15.7.0",
         "react-dom": "^15.5.4"
     },
     "version": "0.1.0",
