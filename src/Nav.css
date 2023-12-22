@@ -10,7 +10,7 @@
   }
   
   #navbar.bg-active {
-    background: #0e70e9;
+    background: #161a1f;
   }
   
   #navbar .nav-wrapper {
@@ -92,6 +92,6 @@
   
   @media only screen and (max-width: 849px) {
     #navbar {
-      background: #126cdbaa;
+      background: #181c22aa;
     }
   }  
