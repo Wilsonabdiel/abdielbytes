@@ -16,7 +16,7 @@ class Nav extends React.Component {
         return (
             <nav id="navbar" className={this.state.isMenuOpen ? 'bg-active' : ''}>
                 <div className="nav-wrapper">
-                    <p className="brand">Ja<strong>W\iL</strong></p>
+                    <p className="brand">Ja<strong>WiL</strong></p>
                     <a
                         className={`menu-button ${this.state.isMenuOpen ? 'active' : ''}`}
                         onClick={this.toggleMenu}>
