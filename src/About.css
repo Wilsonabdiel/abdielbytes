@@ -2,14 +2,14 @@
 #about {
     height: 100%;
     min-height: 100vh;
-    font-size: 1.4rem;
+    font-size: 1rem;
     position: relative;
+    /* background: #444141; */
     background: #fafafa;
     -webkit-clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
             clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
     z-index: 5;
-    /* background: #fafafa url(../public/images/AuthorAbdiel.jpg)/ center right no-repeat; */
-    background: #fafafa url(https://photos.google.com/share/AF1QipMH_PuakdFCsosrF--9jScbR1OChh3h37QHz3NjwyppkrGNOhVGR_XmDfokJ9pukQ/photo/AF1QipPtxlpZa5Nvrh327_gip3eh_rQ6eR6D3iQgQbOc?key=MTg5MkZ1ZlJ1SFAtUm9IYTlMYTFCUUxKNjZfSzhB)/ center right no-repeat;
+    background: #fafafa url(../public/images/AuthorAbdiel.jpg) center right no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
