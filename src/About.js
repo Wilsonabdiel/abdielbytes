@@ -14,8 +14,9 @@ const About = () => (
                 <div className="title">
                     <h3>Who is this guy?</h3>
                     <p className="separator" />
+
                     <div className="desc full">
-                        <h4>My name is Abdiel. </h4>
+                        <h4 className="subtitle">My name is Abdiel. </h4>
                         <p>I am a web developer and a writer well versed
                             in the beauty of the backend with knowlegde of the frontend.</p>
                         <p>
@@ -35,33 +36,39 @@ const About = () => (
                     </div>
                 </div>
 
-                <section>
+                <div className="title">
                     <h3>What does he do?</h3>
-                    <p>
+                    <p className="separator" /></div>
+                <div className="desc">
+                    <h4 className="subtitle">I am a programmer.</h4>
+                    <p>In my front-end work, I typically utilize
+                        JavaScript, both independently and in conjunction
+                        with well-known frameworks such as ReactJS
+                        and VueJS. Additionally, I enhance the
+                        aesthetics of web applications using
+                        Sass, CSS, and, when necessary, complementary
+                        tools like Bootstrap and Bulma.</p>
+                    <p>For the bcakend I work with PHP,
+                        either standalone or with its frameworks
+                        like laravel and symphony. I also work with
+                        Python and its frameworks Django and Flask.
+                        I work with whatever the project requires
+                        even Wordpress when situations require it </p>
 
-                        <h4>I am a programmer.</h4>
-                        <p>In my front-end work, I typically utilize
-                            JavaScript, both independently and in conjunction
-                            with well-known frameworks such as ReactJS
-                            and VueJS. Additionally, I enhance the
-                            aesthetics of web applications using
-                            Sass, CSS, and, when necessary, complementary
-                            tools like Bootstrap and Bulma.</p>
-                        <p>For the bcakend I work with PHP,
-                            either standalone or with its frameworks
-                            like laravel and symphony. I also work with
-                            Python and its frameworks Django and Flask.
-                            I work with whatever the project requires
-                            even Wordpress when situations require it </p>
+
+                </div>
 
 
-                    </p>
-                </section>
-
-                <section>
-                    <h3>Also a writer.</h3>
-                    <p>...</p>
-                </section>
+                <div className="desc">
+                    <h3 className="subtitle">Also a writer.</h3>
+                    <p>I am a passionate writer with a penchant for creativity.
+                        When I am not delving into the realm of words and stories,
+                        I harness my imagination through the art of poetry,
+                        enabling me to convey my thoughts in distinctive and captivating ways.
+                        Beyond the written word, I also find solace and excitement in the virtual
+                        landscapes of video games,
+                        where I embark on thrilling adventures and put my strategic thinking to the test.</p>
+                </div>
             </article>
         </div>
     </section>
