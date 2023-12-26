@@ -12,6 +12,17 @@ import Nav from './Nav';
 class App extends Component {
     state = { loading: false };
 
+    constructor(props) {
+        super(props);
+        this.state = { isMenuOpen: false };
+        this.toggleMenu = this.toggleMenu.bind(this);
+    }
+
+    toggleMenu() {
+        this.setState({ isMenuOpen: !this.state.isMenuOpen });
+    }
+
+
     componentDidMount() {
         // 测试 devServer 的代理功能
         // fetch('/api/category')
@@ -22,8 +33,10 @@ class App extends Component {
     render() {
         return (
             <div className="body">
-                <Menu />
-                <Nav />
+
+                <Nav toggleMenu={this.toggleMenu} isMenuOpen={this.state.isMenuOpen} />
+                <Menu isMenuOpen={this.state.isMenuOpen} toggleMenu={this.toggleMenu} />
+
                 <Header />
                 <About />
                 <Projects />
