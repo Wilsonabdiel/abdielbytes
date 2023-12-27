@@ -1,33 +1,7 @@
 import React from 'react';
 import './projects.css';
-// const Project = ({ title, img, tech, link, repo, children }) => (
-//     <div className="project">
-//         <a className="project-link" href={link} target="_blank" rel="noopener noreferrer">
-//             <figure>
-//                 <img className="project-image" src={img} alt={`Screenshot of ${title}`} />
-//                 <figcaption>{title}</figcaption>
-//             </figure>
-//         </a>
-//         <div className="project-details">
-//             <div className="project-tile">
-//                 <p className="icons">
-//                     {tech.split(' ').map(t => (
-//                         <i key={t} />
-//           ))}
-//                 </p>
-//             </div>
-//             {children}
-//             <div className="buttons">
-//                 <a href={repo} target="_blank" rel="noopener noreferrer">
-//                     View source <i className="fas fa-external-link-alt" />
-//                 </a>
-//                 <a href={link} target="_blank" rel="noopener noreferrer">
-//                     Try it Live <i className="fas fa-external-link-alt" />
-//                 </a>
-//             </div>
-//         </div>
-//     </div>
-//      );
+import Projectgrp from './Projectgrp';
+
 
 const Projects = () => (
     <section id="projects">
@@ -41,6 +15,7 @@ const Projects = () => (
                 <Project key={project.id} {...project} />
       ))} */}
         </div>
+        <Projectgrp />
     </section>
 );
 
