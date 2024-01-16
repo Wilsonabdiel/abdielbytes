@@ -28,8 +28,26 @@ const Project = ({ title, img, tech, link, repo, children }) => (
         </div>
     </div>
    );
+
 const Projectgrp = () => (
     <div className="projects-wrapper">
+        <div>
+            <ul>
+                <li>Current Focus</li>
+
+                <li> Django Ecosystem </li>
+
+                <li> Laravel Ecosystem </li>
+
+                <li>Games</li>
+
+                <li>Web Apps & Online Tools</li>
+
+                <li>CLI Programs</li>
+
+            </ul>
+        </div>
+
         <Project
             title="Anonymous Message Board."
             img="https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/AnonMsgBoard.jpg"

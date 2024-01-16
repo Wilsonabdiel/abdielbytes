@@ -9,11 +9,9 @@ const Projects = () => (
             <div className="heading">
                 <h2 className="title">My Work So Far</h2>
                 <p className="separator" aria-hidden="true" /> {/* Add aria-hidden for non-visual separator */}
-                <p className="subtitle"> Here is a list of most of the projects I have been working on lately.</p>
+                <p className="subtitle"> Here are some of the projects I have worked on so far.</p>
             </div>
-            {/* {projects.map(project => (
-                <Project key={project.id} {...project} />
-      ))} */}
+
         </div>
         <Projectgrp />
     </section>
