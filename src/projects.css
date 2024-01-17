@@ -73,7 +73,7 @@
     color: #252934;
     overflow: hidden;
     text-align: center;
-    border-radius: 50%;
+    border-radius: 0%;
     border: 1px solid #fafafa;
     box-shadow: 0 20px 10px -10px #25293450;
     transition: 300ms;
@@ -203,14 +203,25 @@
   }
   
   
+.group{
+  /* background-color: #19046e; */
+   list-style-type: none;
+    text-align: center;
+    display: flex; /* Change display to flex */
+    flex-direction: column; /* Make list items stack vertically */
+    align-items: center; /* Center */
+}
   .projects-wrapper {
     width: 100%; /* Adjust as needed */
+    
   }
   
   .project-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    left: auto;
+    right: auto;
   }
   
   /* Optional: Define project width */
@@ -220,10 +231,14 @@
   .grp {
     display: flex;      /* Make .grp a flex container */
     flex-wrap: wrap;    /* Allow projects to wrap onto multiple rows */
-    justify-content: space-between; /* Distribute space evenly */
+    justify-content: space-between; 
   }
   
   .grp .project {
-    width: 50vw;         /* Set width for each project within .grp */
+    flex-basis: calc(50% - 20px); /* Set initial size for each project within .grp */
+  }
+  .proj {
+    /* flex: 1; */
+    margin-right: 20px; /* Add margin to create a gap between projects */
   }
   

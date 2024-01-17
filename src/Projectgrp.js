@@ -23,13 +23,17 @@ const Projectgrp = () => (
     <div className="projects-wrapper">
         <div className="project-categ">
             <ul className="project-list flex">
-
-                <li>Current Focus</li>
-                <p className="separator" aria-hidden="true" />
-                <div className="grp flex">
-                    <Project title="Assigner" img="..." link="..." />
-                    <Project title="PyBlog" img="..." link="..." />
-
+                <div className="group">
+                    <li>Current Focus</li>
+                    <p className="separator" aria-hidden="true" />
+                    <div className="grp flex">
+                        <div className="proj">
+                            <Project title="Assigner" img="..." link="..." />
+                        </div>
+                        <div className="proj">
+                            <Project title="PyBlog" img="..." link="..." />
+                        </div>
+                    </div>
                 </div>
                 <li> Django Ecosystem </li>
                 <p className="separator" aria-hidden="true" />
