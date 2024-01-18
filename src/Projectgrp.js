@@ -1,12 +1,9 @@
 import React from 'react';
 
-const Project = ({ title, img, link }) => (
-
-
+const Project = ({ title, link, className = '' }) => (
     <div className="project">
-        <a className="project-link" href={link} target="_blank" rel="noopener noreferrer">
+        <a className={`project-link ${className}`} href={link} target="_blank" rel="noopener noreferrer">
             <figure>
-                <img className="project-image" src={img} alt={`Screenshot of ${title}`} />
                 <figcaption>{title}</figcaption>
             </figure>
         </a>
@@ -14,10 +11,7 @@ const Project = ({ title, img, link }) => (
             <div className="project-tile" />
         </div>
     </div>
-
-   );
-
-
+  );
 const Projectgrp = () => (
 
     <div className="projects-wrapper">
@@ -27,11 +21,13 @@ const Projectgrp = () => (
                     <li>Current Focus</li>
                     <p className="separator" aria-hidden="true" />
                     <div className="grp flex">
-                        <div className="proj">
-                            <Project title="Assigner" img="..." link="..." />
+                        <div className="proj imgback ">
+
+                            <Project title="Assigner" img="..." link="..." className="assigner" />
+
                         </div>
-                        <div className="proj">
-                            <Project title="PyBlog" img="..." link="..." />
+                        <div className="proj ">
+                            <Project title="PyBlog" img="..." link="..." className="py" />
                         </div>
                     </div>
                 </div>

@@ -251,5 +251,13 @@
   .proj {
     flex: 1;
     /* margin-right: 20px; Add margin to create a gap between projects */
+    
   }
-  
+  .assigner {
+    background: #fafafa url(https://cms-imgp.jw-cdn.org/img/p/502012477/univ/art/502012477_univ_lsr_lg.jpg) center / cover;
+    background-position: center;
+  }
+  .py{
+    background: #fafafa url(https://www.getfoundquick.com/wp-content/uploads/2015/08/shutterstock_451991974.jpg) center / cover;
+    background-position: center;
+  }
