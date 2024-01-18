@@ -56,7 +56,7 @@
   }
   
   /* Single Project */
-  #projects .project {
+  /* #projects .project {
     margin: 1rem auto;
     width: 70%;
     padding: 2rem;
@@ -64,8 +64,16 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 2rem;
-  }
-  
+  } */
+  #projects .project {
+    margin: 1rem auto;
+    width: 70%;
+    /* padding: 2rem; */
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+}
   /* Project Image */
   #projects .project .project-link {
     display: block;
@@ -226,19 +234,22 @@
   
   /* Optional: Define project width */
   .project {
-    width: 50%;
+    /* width: 50%; */
   }
   .grp {
     display: flex;      /* Make .grp a flex container */
     flex-wrap: wrap;    /* Allow projects to wrap onto multiple rows */
     justify-content: space-between; 
+    width: 500px;
+    /* background-color: #19046e; */
   }
   
   .grp .project {
-    flex-basis: calc(50% - 20px); /* Set initial size for each project within .grp */
+    flex-basis: calc(50% - 20px); 
+    /* Set initial size for each project within .grp */
   }
   .proj {
-    /* flex: 1; */
-    margin-right: 20px; /* Add margin to create a gap between projects */
+    flex: 1;
+    /* margin-right: 20px; Add margin to create a gap between projects */
   }
   

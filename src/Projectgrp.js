@@ -35,20 +35,59 @@ const Projectgrp = () => (
                         </div>
                     </div>
                 </div>
-                <li> Django Ecosystem </li>
-                <p className="separator" aria-hidden="true" />
+                <div className="group">
+                    <li>Django Ecosystem</li>
+                    <p className="separator" aria-hidden="true" />
+                    {/* <div className="grp flex">
+                        <div className="proj">
+                            <Project title="Assigner" img="..." link="..." />
+                        </div>
+                        <div className="proj">
+                            <Project title="PyBlog" img="..." link="..." />
+                        </div>
+                    </div> */}
+                </div>
+                <div className="group">
+                    <li> Laravel Ecosystem </li>
+                    <p className="separator" aria-hidden="true" />
+                    {/* <div className="grp flex">
+                        <div className="proj">
+                            <Project title="Assigner" img="..." link="..." />
+                        </div>
+                        <div className="proj">
+                            <Project title="PyBlog" img="..." link="..." />
+                        </div>
+                    </div> */}
+                </div>
 
-                <li> Laravel Ecosystem </li>
-                <p className="separator" aria-hidden="true" />
-
+                <div className="group">
+                    <li>Web Apps & Online Tools</li>
+                    <p className="separator" aria-hidden="true" />
+                    {/* <div className="grp flex">
+                        <div className="proj">
+                            <Project title="Assigner" img="..." link="..." />
+                        </div>
+                        <div className="proj">
+                            <Project title="PyBlog" img="..." link="..." />
+                        </div>
+                    </div> */}
+                </div>
                 <li>Games</li>
                 <p className="separator" aria-hidden="true" />
 
-                <li>Web Apps & Online Tools</li>
-                <p className="separator" aria-hidden="true" />
+                <div className="group">
+                    <li>CLI Programs</li>
+                    <p className="separator" aria-hidden="true" />
+                    {/* <div className="grp flex">
+                        <div className="proj">
+                            <Project title="Assigner" img="..." link="..." />
+                        </div>
+                        <div className="proj">
+                            <Project title="PyBlog" img="..." link="..." />
+                        </div>
+                    </div> */}
+                </div>
 
-                <li>CLI Programs</li>
-                <p className="separator" aria-hidden="true" />
 
             </ul>
         </div>
