@@ -4,9 +4,10 @@ const Project = ({ title, link, className = '' }) => (
     <div className="project">
         <a className={`project-link ${className}`} href={link} target="_blank" rel="noopener noreferrer">
             <figure>
-                <figcaption>{title}</figcaption>
+                <figcaption>.</figcaption>
             </figure>
         </a>
+        <figcaption>{title}</figcaption>
         <div className="project-details">
             <div className="project-tile" />
         </div>

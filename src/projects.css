@@ -1,3 +1,7 @@
+:root {
+  --main-bg-color: #f0f0f0;
+}
+
 #projects {
     min-height: 100vh;
     font-size: 1.4rem;
@@ -260,4 +264,11 @@
   .py{
     background: #fafafa url(https://www.getfoundquick.com/wp-content/uploads/2015/08/shutterstock_451991974.jpg) center / cover;
     background-position: center;
+  }
+  
+  figcaption{
+    /* color: #fafafa; */
+    font-size: 15px;
+    font-weight: bold;
+    color: adjust-color(var(--main-bg-color), $hue: -15deg);
   }
