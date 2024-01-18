@@ -32,6 +32,8 @@
     },
     "scripts": {
         "start": "node scripts/start.js",
-        "build": "cross-env NODE_ENV=production rimraf ./build && webpack --env.production --optimize-minimize"
+        
+        "build": "cross-env NODE_ENV=production rimraf ./build && webpack --optimize-minimize"
+
     }
 }
