@@ -46,13 +46,18 @@ module.exports = function (env) {
                  */
                 {
                     enforce: "pre",
-                    test: /\.js$/,
+                    test: /\.(js|jsx)$/,
                     include: path.resolve(__dirname, 'src'),
-                    loader: "eslint-loader",
-                    options: {
-                        failOnError: true,
-                        fix: true
-                    }
+                    loader: 'babel-loader',
+                    query: {
+                        babelrc: false,
+                        presets: [
+                            [
+                                require.resolve('babel-preset-react-app'),
+                                { development: !isProduction } // Explicitly set development mode based on isProduction
+                            ],
+                        ],
+                    },
                 },
                 /**
                  * babel-loader
