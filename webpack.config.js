@@ -9,43 +9,22 @@ var autoprefixer = require('autoprefixer');
 /**
  * webpack.config.js 可以 export 一个 object，或者是一个 env 为参数的 function
  */
+// ...
+
 module.exports = function (env) {
-    /**
-     * 判断是否是生产环境。 当命令行运行 `webpack --env.production` 时， env.production 的值为 true
-     * https://webpack.js.org/configuration/configuration-types/#exporting-a-function-to-use-env
-     */
     const isProduction = env && env.production === true;
 
-    return {
-        // 设定代码的入口，入口可以是一个或者多个，即可以传入一个 array
-        // https://webpack.js.org/configuration/entry-context/
-        context: path.resolve(__dirname, "src"),
-        entry: './index.js',
+    // Explicitly set NODE_ENV here
+    process.env.NODE_ENV = isProduction ? 'production' : 'development';
 
-        // 打包好的代码存放的位置和文件名
-        // 这里的 [name].[hash].js 的格式意味着会自动生成一个带 hash 的文件名
-        // https://webpack.js.org/configuration/output/
-        output: {
-            path: path.resolve(__dirname, 'build'),
-            filename: 'static/js/[name].[hash].js'
-        },
+    return {
+        // ...
 
         module: {
-            /**
-             *  loader 相当于一个预处理器。
-             *  因为正常来说，webpack 只能解析 js，因此，如果过我们要引入非 js 的模块
-             *  就需要一个预处理器来告诉 webpack 该如何处理这个文件，比如 css、图片等
-             *  https://webpack.js.org/concepts/loaders/
-             */
             loaders: [
-                /**
-                 * eslint-loader
-                 * 在构建之前，自动进行 eslint 检查
-                 * 这里的配置设定为，如果有 error，那么就不能继续构建
-                 * https://github.com/MoOx/eslint-loader
-                 */
+                // ...
+
                 {
-                    enforce: "pre",
                     test: /\.(js|jsx)$/,
                     include: path.resolve(__dirname, 'src'),
                     loader: 'babel-loader',
@@ -54,11 +33,19 @@ module.exports = function (env) {
                         presets: [
                             [
                                 require.resolve('babel-preset-react-app'),
-                                { development: !isProduction } // Explicitly set development mode based on isProduction
+                                { development: !isProduction }
                             ],
                         ],
                     },
                 },
+
+                // ...
+            
+
+        // ...
+    
+
+
                 /**
                  * babel-loader
                  * 将 es6 转化为 es5
