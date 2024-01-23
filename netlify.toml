@@ -9,12 +9,8 @@
 [functions]
   hello = "functions/hello.js"
 
-[headers]
-  /*
-  Example: Set a custom Content-Security-Policy header
-  "Content-Security-Policy" = "default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com"
-  */
+
 
 [build.plugins]
   [build.plugins."@netlify/nextjs"]
-    # Configuration for the Next.js plugin
+    
