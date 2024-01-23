@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
   publish = "build"
-  publish_preview = "public"
+  publish_preview = "build"
 
 [redirects]
   "/old-url" = "/new-url"
