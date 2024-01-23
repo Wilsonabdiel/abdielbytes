@@ -7,9 +7,12 @@
   "/old-url" = "/new-url"
 
 [functions]
-  hello = "functions/hello.js"
 
-
+    [functions.hello]
+    external_node_modules = [
+      "module-one",
+      "module-two"
+    ]
 
 [build.plugins]
   [build.plugins."@netlify/nextjs"]
