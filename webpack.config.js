@@ -23,24 +23,27 @@ module.exports = function (env) {
         module: {
             rules: [
                 {
-                    enforce: "pre",
                     test: /\.js$/,
-                    include: path.resolve(__dirname, 'src'),
-                    loader: "eslint-loader",
-                    options: {
-                        failOnError: true,
-                        fix: true
+                    exclude: /node_modules/,
+                    use: {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['@babel/preset-env']
+                            // ... other options if needed
+                        }
                     }
                 },
                 {
                     test: /\.(js|jsx)$/,
                     exclude: /node_modules/,
                     use: {
-                        loader: "babel-loader",
+                        loader: 'babel-loader',
                         options: {
-                            presets: ["env", "react-app"]
+                            presets: ['@babel/preset-env', '@babel/preset-react']
+                        }
+                          
                         },
-                    }
+                    
                 },
                 {
                     test: /\.css$/,
@@ -50,18 +53,20 @@ module.exports = function (env) {
                         {
                             loader: 'postcss-loader',
                             options: {
-                                plugins: () => [
-                                    require('postcss-flexbugs-fixes'),
-                                    autoprefixer({
-                                        browsers: [
-                                            '>1%',
-                                            'last 4 versions',
-                                            'Firefox ESR',
-                                            'not ie < 9',
-                                        ],
-                                        flexbox: 'no-2009',
-                                    }),
-                                ],
+                                postcssOptions: {
+                                    plugins: [
+                                        require('postcss-flexbugs-fixes'),
+                                        autoprefixer({
+                                            browsers: [
+                                                '>1%',
+                                                'last 4 versions',
+                                                'Firefox ESR',
+                                                'not ie < 9',
+                                            ],
+                                            flexbox: 'no-2009',
+                                        }),
+                                    ],
+                                },
                             },
                         },
                     ],
