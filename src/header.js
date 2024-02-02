@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.css';
-
+import backgroundImage from '../public/images/Trees.svg';
 const Header = () => (
     <header id="welcome-section">
         <div className="parentcontainer">
@@ -8,7 +8,11 @@ const Header = () => (
                 <p> Abdiel J. WIlson </p>
             </div>
         </div>
-        <div className="forest" />
+        <div className="forest" style={{ 
+            backgroundImage: `url(${backgroundImage})`, 
+            backgroundPosition: 'bottom left', 
+            backgroundRepeat: 'repeat-x' 
+        }} />
         <div className="silhouette" />
         <div className="moon" />
         <div className="container">

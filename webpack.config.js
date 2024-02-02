@@ -143,6 +143,9 @@ module.exports = function (env) {
                 }
             }
         },
+        devServer: {
+            port: 8080, // Or any other port you want to use
+        },
         devtool: 'source-map',
     };
 }

@@ -1,9 +1,13 @@
 import React from 'react';
 import './About.css';
-// import AuthorAbdiel from './images/AuthorAbdiel.jpg';
+import AuthorAbdiel from '../public/images/AuthorAbdiel.jpg';
 
 const About = () => (
-    <section id="about">
+    <section id="about" style={{ 
+        backgroundImage: `url(${AuthorAbdiel})`, 
+        backgroundPosition: 'top right', 
+        backgroundRepeat: 'no-repeat' 
+    }}>
         <div className="wrapper">
 
             <article>
@@ -48,7 +52,7 @@ const About = () => (
                         aesthetics of web applications using
                         Sass, CSS, and, when necessary, complementary
                         tools like Bootstrap and Bulma.</p>
-                    <p>For the bcakend I work with PHP,
+                    <p>For the backend I work with PHP,
                         either standalone or with its frameworks
                         like laravel and symphony. I also work with
                         Python and its frameworks Django and Flask.
@@ -67,7 +71,7 @@ const About = () => (
                         enabling me to convey my thoughts in distinctive and captivating ways.
                         Beyond the written word, I also find solace and excitement in the virtual
                         landscapes of video games,
-                        where I embark on thrilling adventures and put my strategic thinking to the test.</p>
+                        where I embark on thrilling adventures and put my strategic thinking to the test.</p> *
                 </div>
             </article>
         </div>
