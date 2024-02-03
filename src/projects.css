@@ -291,13 +291,28 @@
 
   @media only screen and (max-width: 768px) {
     #projects .project {
-      /* grid-template-columns: 1fr 2fr; */
+      grid-template-columns: 1fr 2fr;
+     
+    }
+    .projects-container{
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 0;
       margin: 0 auto;
+    }
+    .projects-categ {
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .project-list{
+      margin: 0 auto;
+      padding: 0;
     }
     #projects{
       width: 100vw;
