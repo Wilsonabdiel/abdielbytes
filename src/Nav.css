@@ -90,8 +90,9 @@
     top: 0px;
   }
   
-  @media only screen and (max-width: 849px) {
+  @media only screen and (max-width: 768px) {
     #navbar {
-      background: #181c22aa;
+      /* background: #181c22aa; */
+      height: 30px;
     }
   }  
