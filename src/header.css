@@ -223,7 +223,17 @@
       -webkit-animation: text-fade-in 1000ms 800ms forwards;
               animation: text-fade-in 1000ms 800ms forwards;
     }
-  
+    .containerbackground { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* This makes sure your container takes up the full height of the viewport */
+      width: 100%;
+      font-size: 60px;
+      text-align: center;
+      animation: container-anime 1000ms 500ms forwards;
+}
+
     @-webkit-keyframes text-fade-in {
       from {
         right: 0;

@@ -194,6 +194,11 @@
     #projects .project {
       grid-template-columns: 1fr 2fr;
     }
+    #projects{
+      width: 100vw;
+      overflow-x: hidden;
+    }
+    
   }
   
   @media only screen and (max-width: 949px) {
@@ -271,4 +276,15 @@
     font-size: 15px;
     font-weight: bold;
     color: adjust-color(var(--main-bg-color), $hue: -15deg);
+  }
+
+  @media only screen and (max-width: 1149px) {
+    .grp {
+      display: flex;      /* Make .grp a flex container */
+      flex-wrap: wrap;    /* Allow projects to wrap onto multiple rows */
+      justify-content: space-between; 
+      width: 50vw;
+      height: 120px;
+      
+    }
   }
