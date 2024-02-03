@@ -9,7 +9,7 @@ footer {
     width: 100%;
     height: 150px;
     background: #050505;
-    color: rgb(250, 250, 250);
+    color: rgb(240, 240, 240);
     z-index: 0;
   }
   
@@ -30,4 +30,7 @@ footer {
     footer .wrapper h3 {
       padding-bottom: .8rem;
     }
+    /* footer{
+      height: 50px;
+    } */
   }

@@ -10,7 +10,7 @@
   
   #welcome-section::before {
     content: '';
-    position: fixed;
+    position: relative;
     /* background: url(./images/Stars.svg); */
     background-attachment: fixed;
     width: 100%;
@@ -227,7 +227,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh; /* This makes sure your container takes up the full height of the viewport */
+      height: 100vh; /* This makes sure your container takes up the full height of the viewpor]t */
       width: 100%;
       font-size: 60px;
       text-align: center;
