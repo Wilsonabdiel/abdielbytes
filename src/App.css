@@ -44,7 +44,8 @@ body {
   /* font-family: './static/EduTASBeginner-Regular.ttf', 'Overlock', Arial, Helvetica, sans-serif; */
   font-family: 'Edu TAS Beginner', cursive;
   
-  width: 100vw;
+  /* width: 100vw; */
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 649px) {
   body{
