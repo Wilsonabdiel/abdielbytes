@@ -1,5 +1,5 @@
 import React from 'react';
-import './projects.css';
+import './static/projects.css';
 import Projectgrp from './Projectgrp';
 
 

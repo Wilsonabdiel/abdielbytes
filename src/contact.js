@@ -1,6 +1,6 @@
 import React from 'react';
 import SocialLinks from './SocialLinks';
-import './contact.css';
+import './static/contact.css';
 
 const Contact = () => (
     <section id="contact">

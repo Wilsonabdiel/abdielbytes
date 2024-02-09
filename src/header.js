@@ -1,5 +1,5 @@
 import React from 'react';
-import './header.css';
+import './static/header.css';
 import backgroundImage from '../public/images/Trees.svg';
 const Header = () => (
     <header id="welcome-section">
