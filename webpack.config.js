@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = function (env) {
     const isProduction = env && env.production === true;
@@ -112,6 +113,11 @@ module.exports = function (env) {
                     'SERVICE_URL': isProduction ? "http://pro.example.com" : "http://dev.example.com"
                 }
             }),
+            new CopyWebpackPlugin({
+                patterns: [
+                  { from: 'public/favicon.ico', to: 'favicon.ico' },
+                ],
+              }),
             new MiniCssExtractPlugin({
                 filename: '[name].css',
                 chunkFilename: '[id].css',
