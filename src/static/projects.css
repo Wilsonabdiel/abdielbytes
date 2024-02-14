@@ -270,7 +270,10 @@
     background: #fafafa url(https://www.getfoundquick.com/wp-content/uploads/2015/08/shutterstock_451991974.jpg) center / cover;
     background-position: center;
   }
-  
+  .me50{
+    background: #fafafa url(https://ih1.redbubble.net/image.1718369181.4158/st,small,507x507-pad,600x600,f8f8f8.jpg) center / cover;
+    background-position: center;
+  }
   figcaption{
     /* color: #fafafa; */
     font-size: 15px;
@@ -318,4 +321,10 @@
       width: 100vw;
       overflow-x: hidden;
     }
+}
+
+.linkk{
+  color: #3300ff;
+  text-decoration: dotted;
+  background-color: #9f9fa0;
 }

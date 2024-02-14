@@ -27,12 +27,12 @@ const Projectgrp = () => (
                             <Project title="Assigner" img="..." link="..." className="assigner" />
 
                         </div>
-                        <div className="proj ">
+                        {/* <div className="proj ">
                             <Project title="PyBlog" img="..." link="..." className="py" />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
-                <div className="group">
+                {/* <div className="group">
                     <li>Django Ecosystem</li>
                     <p className="separator" aria-hidden="true" />
                     {/* <div className="grp flex">
@@ -42,22 +42,27 @@ const Projectgrp = () => (
                         <div className="proj">
                             <Project title="PyBlog" img="..." link="..." />
                         </div>
-                    </div> */}
-                </div>
+                    </div> 
+                </div> */}
                 <div className="group">
                     <li> Laravel Ecosystem </li>
                     <p className="separator" aria-hidden="true" />
-                    {/* <div className="grp flex">
+                     <div className="grp flex">
                         <div className="proj">
-                            <Project title="Assigner" img="..." link="..." />
+                            <Project title="Blog" img="..." link="https://github.com/Wilsonabdiel/blog"  className='py'/>
                         </div>
-                        <div className="proj">
+                        <div className="proj imgback ">
+
+<Project title="Assigner" img="..." link="..." className="assigner" />
+
+</div>
+                        {/* <div className="proj">
                             <Project title="PyBlog" img="..." link="..." />
-                        </div>
-                    </div> */}
+                        </div> */}
+                    </div> 
                 </div>
 
-                <div className="group">
+                {/* <div className="group">
                     <li>Web Apps & Online Tools</li>
                     <p className="separator" aria-hidden="true" />
                     {/* <div className="grp flex">
@@ -67,22 +72,22 @@ const Projectgrp = () => (
                         <div className="proj">
                             <Project title="PyBlog" img="..." link="..." />
                         </div>
-                    </div> */}
-                </div>
-                <li>Games</li>
-                <p className="separator" aria-hidden="true" />
+                    </div> *
+                </div> */}
+                {/* <li>Games</li>
+                <p className="separator" aria-hidden="true" /> */}
 
                 <div className="group">
                     <li>CLI Programs</li>
                     <p className="separator" aria-hidden="true" />
-                    {/* <div className="grp flex">
+                    <div className="grp flex">
                         <div className="proj">
-                            <Project title="Assigner" img="..." link="..." />
+                            <Project title="Me50" img="..." link="https://github.com/me50/Wilsonabdiel" className="me50" />
                         </div>
-                        <div className="proj">
+                        {/* <div className="proj">
                             <Project title="PyBlog" img="..." link="..." />
-                        </div>
-                    </div> */}
+                        </div> */}
+                    </div> 
                 </div>
 
 
