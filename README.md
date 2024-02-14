@@ -20,3 +20,11 @@ npm start
 ```
 npm run build
 ```
+
+#OR
+
+##Visit 
+
+```
+https://abdielbytes.netlify.app/ 
+```
