@@ -6,8 +6,7 @@
     position: relative;
     /* background: #444141; */
     /* background: #fafafa; */
-    -webkit-clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
-            clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
+   
     z-index: 10;
     background: #fafafa url("../static/images/AuthorAbdiel.jpg") center right no-repeat;
     background-attachment: fixed;
@@ -91,8 +90,7 @@
   }
   @media only screen and (max-width: 949px) {
     #about {
-      -webkit-clip-path: polygon(0 0, 20% 2%, 100% 0, 100% 100%, 80% 98%, 0 100%);
-              clip-path: polygon(0 0, 20% 2%, 100% 0, 100% 100%, 80% 98%, 0 100%);
+      
       background-position: top left;
       background-size: cover;
     }
