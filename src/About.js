@@ -39,7 +39,7 @@ const About = () => (
                             both the culinary art and its cultural significance!
 
                         </p>
-                        <p><strong>That's a little about me.</strong></p>
+                       
                     </div>
                 </div>
 
@@ -74,7 +74,11 @@ const About = () => (
                        
                 </div>
                 <div className="desc">
-                <p>That is enough about me. Do reach out so I learn about you too. 
+                <p><strong>That's a little about me.</strong></p>
+               
+                </div>
+                <div className="desc">
+                <p>In the meantime, I would love to hear about you too. Please send a dm on 
                 <a href="https://twitter.com/abdielbytes"> <small>Twiiter </small> </a> 
                 OR use the <a href='#contact'><small>contact form</small></a>
                 </p>
