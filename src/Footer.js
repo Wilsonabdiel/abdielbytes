@@ -5,7 +5,7 @@ import './static/Footer.css';
 const Footer = () => (
     <footer>
         <div className="wrapper">
-                  <p className="copyright">Copyright &copy; {new Date().getFullYear()} JaWiL.</p>
+                  <p className="copyright">Copyright &copy; {new Date().getFullYear()} Abdiel John Wilson.</p>
             <SocialLinks />
         </div>
     </footer>
