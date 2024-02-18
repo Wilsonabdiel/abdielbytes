@@ -47,12 +47,12 @@ const About = () => (
                     <h3>What does he do?</h3>
                     <p className="separator" /></div>
                 <div className="desc">
-                    <h4 className="subtitle">I am a <a href='#portfolio'>programmer</a>.</h4>
+                    <h4 className="subtitle">I am a <a href="#projects" >programmer</a>.</h4>
                    
                     <p>I work with PHP,
                         either standalone or with its frameworks
                         like laravel and symphony. I also work with
-                        Python and its frameworks Django and Flask. I have built several projects in the forementioned languages
+                        Python and its frameworks Django and Flask. I have built several projects in the forementioned languages. Some of these projects came about during my effort to gain basic knowledge. 
                      </p>
 
 
@@ -60,14 +60,27 @@ const About = () => (
 
 
                 <div className="desc">
-                    <h3 className="subtitle">Also a writer.</h3>
-                    <p>I am a passionate writer with a penchant for creativity.
-                        When I am not delving into the realm of words and stories,
-                        I harness my imagination through the art of poetry,
-                        enabling me to convey my thoughts in distinctive and captivating ways.
-                        Beyond the written word, I also find solace and excitement in the virtual
-                        landscapes of video games,
-                        where I embark on thrilling adventures and put my strategic thinking to the test.</p> 
+                    <h3 className="subtitle">Also a <a href="writerprofile"> writer.</a> </h3>
+                    <p>I am addicted to creativity. When it comes to the realm words, 
+                        I tell stories and convey emotions 
+                        as best as I can using language.
+                        </p>
+                        <p>
+                       Poetry gives me a safe space to explore my imaginations
+                       </p>
+                       <p>
+                        When not trapped in the world of coding, or that of writing, I spend my time playing video games, who does not enjoy the adventures and quests the offer.
+                        </p> 
+                       
+                </div>
+                <div className="desc">
+                <p>That is enough about me. Do reach out so I learn about you too. 
+                <a href="https://twitter.com/abdielbytes"> <small>Twiiter </small> </a> 
+                OR use the <a href='#contact'><small>contact form</small></a>
+                </p>
+                    
+                     <p>See ya!</p> 
+               
                 </div>
             </article>
         </div>
