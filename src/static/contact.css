@@ -1,8 +1,7 @@
 
 #contact {
     background: #181d23 url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/envelope.svg?sanitize=true) no-repeat right;
-    /* -webkit-clip-path: polygon(0 0, 20% 100px, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 20% 100px, 100% 0, 100% 100%, 0 100%); */
+  
     color: #fafafa;
     min-height: 100vh;
     width: 100%;
@@ -12,7 +11,7 @@
     align-items: center;
     position: relative;
     margin: -100px 0 140px;
-    z-index: 1;
+    z-index: 2;
   }
   
   #contact .container {
@@ -140,5 +139,11 @@
   
   
   
+  
+  .mail .at, .mail .dot {
+    /* font-size: .9rem; */
+    /* margin: 0 .1rem; */
+    color: #e9e7ee;
+  }
   
   

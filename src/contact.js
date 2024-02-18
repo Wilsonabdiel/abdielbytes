@@ -12,13 +12,13 @@ const Contact = () => (
                     <p className="subtitle">
                         Please use the form below or send an email to
                         <a href="mailto:wilsonabdiel86@gmail.com" className="mail">
-                            wilsonabdiel86{' '}
-                            <i className="fas fa-at at" aria-hidden="true" />{' '}
-                            gmail{' '}
-                            <i className="fas fa-circle dot" aria-hidden="true" />{' '}
+                            wilsonabdiel86
+                            <i className="fa fa-at at" aria-hidden="true" />
+                            gmail
+                            <i className="fa fa-circle dot" aria-hidden="true" />
                             com
                         </a>
-                        .
+                        
                     </p>
                     <SocialLinks />
                 </div>
