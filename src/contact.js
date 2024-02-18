@@ -18,7 +18,7 @@ const Contact = () => (
                             <i className="fa fa-circle dot" aria-hidden="true" />
                             com
                         </a>
-                        
+                    
                     </p>
                     <SocialLinks />
                 </div>
