@@ -53,12 +53,9 @@ const Projectgrp = () => (
                         </div>
                         <div className="proj imgback ">
 
-<Project title="Assigner" img="..." link="..." className="assigner" />
+                        <Project title="Assigner" img="..." link="..." className="assigner" />
 
-</div>
-                        {/* <div className="proj">
-                            <Project title="PyBlog" img="..." link="..." />
-                        </div> */}
+                        </div>
                     </div> 
                 </div>
 
