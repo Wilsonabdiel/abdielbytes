@@ -10,7 +10,7 @@ const Contact = () => (
                     <h2 className="title">Want to contact me?</h2>
                     <p className="separator" aria-hidden="true" /> {/* Add aria-hidden for non-visual separator */}
                     <p className="subtitle">
-                        Please use the form below or send an email to
+                        Please use the form below or send an email to{' '}
                         <a href="mailto:wilsonabdiel86@gmail.com" className="mail">
                             wilsonabdiel86
                             <i className="fa fa-at at" aria-hidden="true" />
