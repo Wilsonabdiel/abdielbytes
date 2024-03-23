@@ -57,5 +57,31 @@
           redirectToChrome();
       }
   </script> -->
+
+  
+<script>
+  // Detect if the user is using an iPhone or Android
+  const isiPhone = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  const isAndroid = /Android/i.test(navigator.userAgent);
+
+  // Function to open the link in the external browser
+  function openExternalLink(link) {
+      const browser = isiPhone ? 'Safari' : isAndroid ? 'Chrome' : 'default browser';
+      console.log(`Opening link in ${browser}`);
+      window.open(link, '_blank');
+  }
+
+  // Execute when the window finishes loading
+  window.onload = function () {
+      const linkElement = document.getElementById('external-link');
+      linkElement.addEventListener('click', (event) => {
+          event.preventDefault(); // Prevent default link behavior
+          openExternalLink(linkElement.href);
+      });
+  };
+</script>
+
+
+
   </body>
 </html>
