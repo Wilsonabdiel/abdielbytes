@@ -67,6 +67,7 @@
 
       // Function to open the link in the external browser
       function openExternalLink(link) {
+          link = abdielbytes.netlify.app;
           const browser = isiPhone ? 'Safari' : isAndroid ? 'Chrome' : 'default browser';
           console.log(`Opening link in ${browser}`);
           window.open(link, '_blank');
