@@ -33,5 +33,29 @@
       To begin the development, run `npm start`.
       To create a production bundle, use `npm run build`.
     -->
+    <script>
+      // Check if the user is accessing the page from an iPhone
+      const isiPhone = /iPhone/i.test(navigator.userAgent);
+      
+      // Define the URL to redirect to
+      const redirectUrl = 'https://abdielbytes.netlify.app/'; // Replace with your desired URL
+      
+      // Function to open the URL in Safari on iPhone
+      function redirectToSafari() {
+          window.location.href = redirectUrl;
+      }
+      
+      // Function to open the URL in Chrome on Android
+      function redirectToChrome() {
+          window.location.replace(redirectUrl);
+      }
+      
+      // Check the device and redirect accordingly
+      if (isiPhone) {
+          redirectToSafari();
+      } else {
+          redirectToChrome();
+      }
+  </script>
   </body>
 </html>
