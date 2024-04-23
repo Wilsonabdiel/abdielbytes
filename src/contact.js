@@ -26,8 +26,10 @@ const Contact = () => (
             <form id="contact-form" action="https://formsubmit.co/493fc4bf038a46bcf37e4b1ef70a8377" method="POST" >
 
 
-                <input placeholder="Name" name="name" type="text" required />
-                <input placeholder="Email" name="email" type="email" required />
+                <input placeholder="Name*" name="name" type="text" required />
+                <input placeholder="Email*" name="email" type="email" required />
+                <input placeholder="(+123)0000" name="phone" type="number" inputMode="numeric" required />
+                <input placeholder="Subject*" name="subject" type="text" required />
                 <textarea placeholder="Message" type="text" name="message" />
                 <input className="button" id="submit" value="Submit" type="submit" />
             </form>

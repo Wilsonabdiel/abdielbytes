@@ -129,10 +129,10 @@ module.exports = function (env) {
             })
         ],
         devServer: {
-            hot: true,
+           
             contentBase: path.join(__dirname, "public"),
             compress: true,
-            port: 9000,
+            port: 8000,
             publicPath: '/',
             proxy: {
                 "/api": {
@@ -144,7 +144,7 @@ module.exports = function (env) {
             }
         },
         devServer: {
-            port: 5000, // Or any other port you want to use
+            port: 8000, // Or any other port you want to use
         },
         devtool: 'source-map',
     };

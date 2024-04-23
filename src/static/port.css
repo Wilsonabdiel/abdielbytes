@@ -1,0 +1,67 @@
+.header {
+  position: relative;
+  width: 100%;
+  background-color: #000000;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  color: #f9f1e9;
+}
+
+.small {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%; /* Set the width to 60% of the viewport width */
+  padding: 20px; /* Add padding for space around content */
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.text {
+  width: 25%;
+  font-size: 12px;
+  
+  
+}
+.parent{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.text > div {
+  margin-bottom: 20px;
+}
+/* to Work ON */
+.project-carousel {
+  max-width: 100%; /* Limit width to 100% for responsiveness */
+  background-color: #f0f0f0;
+  padding: 20px; /* Add padding for space around content */
+}
+
+/* Example styles for the carousel content */
+.project-carousel p {
+  margin: 0;
+}
+
+/* Additional styles for responsiveness */
+@media only screen and (max-width: 768px) {
+  .small {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .text,
+  .project-carousel {
+    max-width: 100%; /* Full width on smaller screens */
+    width: 100%;
+  }
+}

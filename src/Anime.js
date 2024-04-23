@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import { TweenLite, Circ } from 'gsap'; // Import TweenLite and Circ from GSAP
-import './static/header.css';
-import backgroundImage from '../public/images/Trees.svg';
 
-const Header = () => {
-  useEffect(() => {
+const Anime = () => {
+  
+    useEffect(() => {
     let width,
       height,
       largeHeader,
@@ -223,21 +222,7 @@ const Header = () => {
       window.removeEventListener("resize", resize);
     };
   }, []); // Empty dependency array ensures the effect runs only once after mount
-
-  return (
-    <div id='large-header' className='large-header'>
-      <canvas id='demo-canvas'></canvas>
-      <div className='main-titles'>
-        {/* <div>
-          <img src='.\public\images\dev.png'></img>
-          </div> */}
-        <h1 className='main-title'>Abdiel <span className='thin'>J.Wilson</span></h1>
-        <h2 className='main-title'>Software <span className='thin'>Developer</span></h2>
-      </div>
-    </div>
-
-
-  );
+  return null;
 };
 
-export default Header;
+export default Anime;

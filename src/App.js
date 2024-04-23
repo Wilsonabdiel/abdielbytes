@@ -8,6 +8,7 @@ import Contact from './contact';
 import Footer from './Footer';
 import Menu from './Menu';
 import Nav from './Nav';
+import Portfolio from './Portfolio';
 
 class App extends Component {
     state = { loading: false };
@@ -38,8 +39,9 @@ class App extends Component {
                 <Menu isMenuOpen={this.state.isMenuOpen} toggleMenu={this.toggleMenu} />
 
                 <Header />
+                <Portfolio />
                 <About />
-                <Projects />
+                {/* <Projects /> */}
                 <Contact />
                 <Footer />
                 <SocialLinks />

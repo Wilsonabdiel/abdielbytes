@@ -11,9 +11,7 @@ const About = () => (
         <div className="wrapper">
 
             <article>
-                {/* <header>
-                    <h2>About Me</h2>
-                </header> */}
+          
 
                 <div className="title">
                     <h3>Who is this guy?</h3>
