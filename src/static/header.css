@@ -21,12 +21,19 @@
   text-align: center;
 }
 .main-title{
-  
+  font-size: 20px;
   margin: 0;
   padding: 0;
   color: #f9f1e9;
   text-align: center;
   
+  
+}
+.thin1{
+  color: #f9f1e9;
+  text-align: center;
+  font-weight: 200;
+  font-size: 20px;
 }
 .line {
   position: absolute;
@@ -54,4 +61,59 @@
 .color {
   color: #e1e0e6;
   font-style: italic;
+}
+
+.write{
+  color: #f9f1e9;
+}
+
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+  color: #f9f1e9;
+} */
+
+/* h1, h2 {
+  font-weight: 200;
+  margin: 0.4rem;
+} */
+
+h1 {
+  font-size: 3.5rem;
+}
+
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #f9f1e9;
+}
+
+@media(min-width: 1200px) {
+  h1 {
+      font-size: 5rem;
+  }
+}
+
+@media(max-width: 800px) {
+  .container {
+      padding: 0 1rem;
+  }
+  
+  h1 {
+      font-size: 3rem;
+  }
+}
+
+@media(max-width: 500px) {
+  h1 {
+      font-size: 2.5rem;
+  }
+  
+  h2 {
+      font-size: 1.5rem;
+  }
 }

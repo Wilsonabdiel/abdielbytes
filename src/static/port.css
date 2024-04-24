@@ -16,7 +16,7 @@
   flex-direction: column;
   justify-content: center;
   width: 60%; /* Set the width to 60% of the viewport width */
-  padding: 20px; /* Add padding for space around content */
+  padding: 20px; /* Add padding for space around con tent */
 }
 
 .title {
@@ -44,7 +44,6 @@
 /* to Work ON */
 .project-carousel {
   max-width: 100%; /* Limit width to 100% for responsiveness */
-  background-color: #f0f0f0;
   padding: 20px; /* Add padding for space around content */
 }
 
@@ -64,4 +63,54 @@
     max-width: 100%; /* Full width on smaller screens */
     width: 100%;
   }
+}
+
+
+.project-carousel {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-box {
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project-box img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-box img:hover {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-box:hover .overlay {
+  opacity: 1;
+}
+
+.project-name {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
 }

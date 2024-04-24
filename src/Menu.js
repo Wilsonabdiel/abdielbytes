@@ -13,15 +13,16 @@ const Menu = props => (
                     </a>
                 </li>
                 <li>
+                    <a href="#portfolio" onClick={props.toggleMenu}>
+                        PORTFOLIO
+                    </a>
+                </li>
+                <li>
                     <a href="#about" onClick={props.toggleMenu}>
                         ABOUT
                     </a>
                 </li>
-                <li>
-                    <a href="#projects" onClick={props.toggleMenu}>
-                        PORTFOLIO
-                    </a>
-                </li>
+           
                 <li>
                     <a href="#contact" onClick={props.toggleMenu}>
                         CONTACT

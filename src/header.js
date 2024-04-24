@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { TweenLite, Circ } from 'gsap'; // Import TweenLite and Circ from GSAP
+import { TweenLite, Circ } from 'gsap';
 import './static/header.css';
 import backgroundImage from '../public/images/Trees.svg';
 
@@ -14,7 +14,6 @@ const Header = () => {
       target,
       animateHeader = true;
 
-    // Main function to initialize the header
     const initHeader = () => {
       width = window.innerWidth;
       height = window.innerHeight;
@@ -28,7 +27,6 @@ const Header = () => {
       canvas.height = height;
       ctx = canvas.getContext("2d");
 
-      // create points
       points = [];
       for (let x = 0; x < width; x = x + width / 20) {
         for (let y = 0; y < height; y = y + height / 20) {
@@ -39,7 +37,6 @@ const Header = () => {
         }
       }
 
-      // for each point find the 5 closest points
       for (let i = 0; i < points.length; i++) {
         let closest = [];
         let p1 = points[i];
@@ -69,7 +66,6 @@ const Header = () => {
         p1.closest = closest;
       }
 
-      // assign a circle to each point
       for (let i = 0; i < points.length; i++) {
         let c = new Circle(
           points[i],
@@ -80,7 +76,6 @@ const Header = () => {
       }
     };
 
-    // Event handling
     const addListeners = () => {
       if (!("ontouchstart" in window)) {
         window.addEventListener("mousemove", mouseMove);
@@ -122,7 +117,6 @@ const Header = () => {
       canvas.height = height;
     };
 
-    // animation
     const initAnimation = () => {
       animate();
       for (let i = 0; i < points.length; i++) {
@@ -134,7 +128,6 @@ const Header = () => {
       if (animateHeader) {
         ctx.clearRect(0, 0, width, height);
         for (let i = 0; i < points.length; i++) {
-          // detect points in range
           if (Math.abs(getDistance(target, points[i])) < 4000) {
             points[i].active = 0.3;
             points[i].circle.active = 0.6;
@@ -167,7 +160,6 @@ const Header = () => {
       });
     };
 
-    // Canvas manipulation
     const drawLines = (p) => {
       if (!p.active) return;
       for (let i = 0; i < p.closest.length; i++) {
@@ -182,7 +174,6 @@ const Header = () => {
     function Circle(pos, rad, color) {
       var _this = this;
 
-      // constructor
       (function () {
         _this.pos = pos || null;
         _this.radius = rad || null;
@@ -205,38 +196,80 @@ const Header = () => {
       };
     }
 
-    // Util
     const getDistance = (p1, p2) => {
       return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
     };
 
-    // Initialize the header and animation
+    // TypeWriter Class for text animation
+    class TypeWriter {
+      constructor(txtElement, words, wait = 3000) {
+        this.txtElement = txtElement;
+        this.words = words;
+        this.txt = '';
+        this.wordIndex = 0;
+        this.wait = parseInt(wait, 10);
+        this.type();
+        this.isDeleting = false;
+      }
+
+      type() {
+        const current = this.wordIndex % this.words.length;
+        const fullTxt = this.words[current];
+
+        if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+        let typeSpeed = 300;
+        if (this.isDeleting) {
+          typeSpeed /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+          typeSpeed = this.wait;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+          this.isDeleting = false;
+          this.wordIndex++;
+          typeSpeed = 500;
+        }
+
+        setTimeout(() => this.type(), typeSpeed);
+      }
+    }
+
+    // Initialize the TypeWriter
+    const txtElement = document.querySelector('.txt-type');
+    const words = JSON.parse(txtElement.getAttribute('data-words'));
+    const wait = txtElement.getAttribute('data-wait');
+    new TypeWriter(txtElement, words, wait);
+
     initHeader();
     initAnimation();
     addListeners();
 
-    // Cleanup function (optional)
     return () => {
-      // Remove event listeners here if needed
       window.removeEventListener("mousemove", mouseMove);
       window.removeEventListener("scroll", scrollCheck);
       window.removeEventListener("resize", resize);
     };
-  }, []); // Empty dependency array ensures the effect runs only once after mount
+  }, []); 
 
   return (
     <div id='large-header' className='large-header'>
       <canvas id='demo-canvas'></canvas>
       <div className='main-titles'>
-        {/* <div>
-          <img src='.\public\images\dev.png'></img>
-          </div> */}
-        <h1 className='main-title'>Abdiel <span className='thin'>J.Wilson</span></h1>
-        <h2 className='main-title'>Software <span className='thin'>Developer</span></h2>
+        <h1 className='main-title'><span className='thin1'>Hey there, I'm </span>Abdiel <span className='thin'>J.Wilson</span></h1>
+        
+        <h1 className='write'>I write {' '}
+          <span className="txt-type" data-wait="500" data-words='["Laravel", "Python", "C", "JavaScript", "Django"]'></span>
+        </h1>
       </div>
     </div>
-
-
   );
 };
 

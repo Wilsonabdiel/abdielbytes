@@ -1,29 +1,52 @@
-import React, { useEffect } from 'react';
-import { TweenLite, Circ } from 'gsap'; // Import TweenLite and Circ from GSAP
+import React from 'react';
 import './static/port.css';
 
-const Porfolio = () => {
-  
+const Portfolio = () => {
+  // Sample project data, replace with your actual project data
+  const projects = [
+    {
+      name: 'Blog',
+      imageUrl: 'https://via.placeholder.com/150',
+      websiteUrl: 'https://www.example.com/project1',
+    },
+    {
+      name: 'Project 2',
+      imageUrl: 'https://via.placeholder.com/150',
+      websiteUrl: 'https://www.example.com/project2',
+    },
+    {
+      name: 'Project 3',
+      imageUrl: 'https://via.placeholder.com/150',
+      websiteUrl: 'https://www.example.com/project3',
+    },
+  ];
+
   return (
     <section className='header'>
       <div className='small'>
-
         <div className='title'>Portfolio</div>
         <div className='parent'>
           <div className='text'>
-          <p>
-            I am a backend engineer with 2+ years of experience learning and working within the intricacies of the backend. I have designed, developed and maintained roboust and scalable web applications. I love being part of teams that want to chnage the world.
-          </p>
-        </div>
-        <div className='project-carousel'>
-        <p>Project Carousel Content Here</p>
+            <p>
+              I am a backend engineer with 2+ years of experience learning and working within the intricacies of the backend. I have designed, developed, and maintained robust and scalable web applications. I love being part of teams that want to change the world.
+            </p>
+          </div>
+          <div className='project-carousel'>
+            {projects.map((project, index) => (
+              <div className='project-box' key={index}>
+                <a href={project.websiteUrl} target='_blank' rel='noopener noreferrer'>
+                  <img src={project.imageUrl} alt={project.name} />
+                  <div className='overlay'>
+                    <p className='project-name'>{project.name}</p>
+                  </div>
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-
-    </div>
- 
     </section>
   );
 };
 
-export default Porfolio;
+export default Portfolio;

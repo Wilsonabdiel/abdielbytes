@@ -10,7 +10,7 @@
   }
   
   #navbar.bg-active {
-    background: #161a1f;
+    background: #121416;
   }
   
   #navbar .nav-wrapper {
@@ -24,7 +24,7 @@
   
   #navbar .brand {
     font-size: 1.6rem;
-    color: #fafafa;
+    color: #f9f1e9;
     cursor: default;
   }
   
@@ -43,7 +43,7 @@
     content: '';
     width: 30px;
     height: 3px;
-    background: #fafafa;
+    background: #f9f1e9;;
     transition: 500ms cubic-bezier(0.77, 0, 0.175, 1);
   }
   
@@ -65,12 +65,12 @@
   .menu-button:hover > span,
   .menu-button:hover > span::before,
   .menu-button:hover > span::after {
-    background: #19046e;
+    background: #f9f1e9;;
   }
-  .menu-button.active {
-    background-color: #126cdbaa; /* Or any other desired color */
-    border: 1px solid #19046e; /* Optional border for emphasis */
-  }
+  /* .menu-button.active {
+    background-color: #000000aa; /* Or any other desired color 
+    border: 1px solid #f9f1e9;; /* Optional border for emphasis 
+  } */
   
   .menu-button.active > span  {
     background: transparent;
