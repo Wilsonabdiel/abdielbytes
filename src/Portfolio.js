@@ -6,13 +6,13 @@ const Portfolio = () => {
   const projects = [
     {
       name: 'Blog',
-      imageUrl: 'https://via.placeholder.com/150',
-      websiteUrl: 'https://www.example.com/project1',
+      imageUrl: 'https://raw.githubusercontent.com/Wilsonabdiel/blog/main/public/images/logo.svg',
+      websiteUrl: 'hhttps://github.com/Wilsonabdiel/blog',
     },
     {
-      name: 'Project 2',
-      imageUrl: 'https://via.placeholder.com/150',
-      websiteUrl: 'https://www.example.com/project2',
+      name: 'AbdielBytes',
+      imageUrl: 'https://raw.githubusercontent.com/Wilsonabdiel/abdielbytes/main/public/favicon.ico',
+      websiteUrl: 'https://abdielbytes.netlify.app/',
     },
     {
       name: 'Project 3',
